@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <input id="CallModalDialog" type="button" value="モーダルダイアログを呼び出す" />
+</div>
+
+@section Scripts{
+    <script type="text/javascript" src="/js/HomeIndex.js"></script>
+    <script type="text/javascript">
+        // JavaScriptに必要なアプリケーション設定を構築する。
+        // 本来は_Layoutなどで行う。
+        var _appSettings = {
+            AppRootPath: "@Url.Action()",
+            AppName: "JavaScriptテストアプリケーション"
+        };
+    </script>
+}   
